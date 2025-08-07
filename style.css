@@ -23,6 +23,7 @@ h1, .updated-date {
     padding: 20px;
     width: 90%;
     max-width: 600px;
+    color: #333; /* This is the fix: sets text color to dark gray */
 }
 
 .value-item {
