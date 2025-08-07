@@ -4,28 +4,23 @@ const knifesValues = {
     "Arctic": "1"
 };
 
-// This function will display a given set of values
-function displayValues(valuesToShow) {
-    const container = document.getElementById('values-container');
-    container.innerHTML = ''; // Clear the container first
+// Function to display the knife values in a table
+function displayKnifesTable(values) {
+    const tableBody = document.getElementById('knifes-table-body');
+    tableBody.innerHTML = ''; // Clear the table body
 
-    for (const key in valuesToShow) {
-        const valueItem = document.createElement('div');
-        valueItem.classList.add('value-item');
-        const keySpan = document.createElement('span');
-        keySpan.classList.add('value-key');
-        keySpan.textContent = key;
-        const valueSpan = document.createElement('span');
-        valueSpan.textContent = valuesToShow[key];
-        valueItem.appendChild(keySpan);
-        valueItem.appendChild(valueSpan);
-        container.appendChild(valueItem);
+    for (const item in values) {
+        const row = tableBody.insertRow();
+        const itemCell = row.insertCell();
+        const valueCell = row.insertCell();
+        itemCell.textContent = item;
+        valueCell.textContent = values[item]; // Correctly reference the value
     }
 }
 
 // Function to handle the button click
 function onKnifesButtonClick() {
-    displayValues(knifesValues);
+    displayKnifesTable(knifesValues);
 }
 
 // Add the click event listener to the button when the page loads
