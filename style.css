@@ -1,9 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('image_cf874f.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #000;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10%),
+                      radial-gradient(circle, rgba(255, 255, 255, 0.1) 15%, transparent 15%);
+    background-size: 30px 30px, 50px 50px;
+    background-position: 0 0, 25px 25px;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -63,20 +64,4 @@ th {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-}
-
-.footer-left {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    font-size: 0.8em;
-    color: #ccc;
-}
-
-.footer-right {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    font-size: 0.8em;
-    color: #ccc;
 }
