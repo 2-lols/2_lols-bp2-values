@@ -39,20 +39,23 @@ h1 {
     color: #000;
 }
 
-.value-item {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
 }
 
-.value-item:last-child {
-    border-bottom: none;
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
-.value-key {
+th {
+    background-color: #f2f2f2;
     font-weight: bold;
 }
+
 #knifes-button {
     background-color: #ff0000;
     color: white;
