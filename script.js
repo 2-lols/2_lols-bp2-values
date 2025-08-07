@@ -1,6 +1,7 @@
 // Knife values to display when the button is clicked
 const knifesValues = {
-    "Azure": "0.5"
+    "Azure": "0.5",
+    "Arctic": "1"
 };
 
 // This function will display a given set of values
