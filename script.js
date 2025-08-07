@@ -1,33 +1,46 @@
-// This object holds your key-value pairs
-const values = {
-    "PlayerCount": 15,
-    "GameMode": "Capture the Flag",
+// Server values to display by default
+const serverValues = {
+    "PlayerCount": 32,
+    "GameMode": "Breaking point 2",
     "ServerStatus": "Online",
-    "MapName": "Breaking point 2"
-       
+    "MapName": "Bp2"
 };
 
-// This function creates an HTML element for each key-value pair
-function displayValues() {
-    const container = document.getElementById('values-container');
+// Knife values to display when the button is clicked
+const knifesValues = {
+    "Azure": "0.5"
+};
 
-    for (const key in values) {
+// This function will display a given set of values
+function displayValues(valuesToShow) {
+    const container = document.getElementById('values-container');
+    container.innerHTML = ''; // Clear the container first
+
+    for (const key in valuesToShow) {
         const valueItem = document.createElement('div');
         valueItem.classList.add('value-item');
-
         const keySpan = document.createElement('span');
         keySpan.classList.add('value-key');
         keySpan.textContent = key;
-
         const valueSpan = document.createElement('span');
-        valueSpan.textContent = values[key];
-
+        valueSpan.textContent = valuesToShow[key];
         valueItem.appendChild(keySpan);
         valueItem.appendChild(valueSpan);
-
         container.appendChild(valueItem);
     }
 }
 
-// Call the function when the page loads
-window.onload = displayValues;
+// Function to handle the button click
+function onKnifesButtonClick() {
+    displayValues(knifesValues);
+}
+
+// Display server values when the page loads
+window.onload = function() {
+    displayValues(serverValues);
+    // Add the click event listener to the button
+    const button = document.getElementById('knifes-button');
+    if (button) {
+        button.onclick = onKnifesButtonClick;
+    }
+};
