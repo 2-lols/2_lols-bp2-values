@@ -1,15 +1,15 @@
 // Knife values to display when the button is clicked
 const knifesValues = {
-    "Azure": {
-        "OG_Value": "0.5",
+    "Arctic": {
+        "OG_Value": "1",
         "Tag_Serial_Value": "N/A"
     },
     "Jade": {
         "OG_Value": "0.5",
         "Tag_Serial_Value": "N/A"
     },
-    "Arctic": {
-        "OG_Value": "1",
+    "Azure": {
+        "OG_Value": "0.5",
         "Tag_Serial_Value": "N/A"
     }
 };
