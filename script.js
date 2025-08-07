@@ -1,7 +1,17 @@
 // Knife values to display when the button is clicked
 const knifesValues = {
-    "Azure": "0.5",
-    "Arctic": "1"
+    "Azure": {
+        "OG_Value": "0.5",
+        "Tag_Serial_Value": "N/A"
+    },
+    "Jade": {
+        "OG_Value": "0.5",
+        "Tag_Serial_Value": "N/A"
+    },
+    "Arctic": {
+        "OG_Value": "1",
+        "Tag_Serial_Value": "N/A"
+    }
 };
 
 // Function to display the knife values in a table
@@ -11,10 +21,15 @@ function displayKnifesTable(values) {
 
     for (const item in values) {
         const row = tableBody.insertRow();
+        
         const itemCell = row.insertCell();
-        const valueCell = row.insertCell();
         itemCell.textContent = item;
-        valueCell.textContent = values[item]; // Correctly reference the value
+        
+        const ogValueCell = row.insertCell();
+        ogValueCell.textContent = values[item].OG_Value;
+
+        const tagSerialCell = row.insertCell();
+        tagSerialCell.textContent = values[item].Tag_Serial_Value;
     }
 }
 
