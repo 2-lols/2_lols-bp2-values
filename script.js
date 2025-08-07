@@ -19,6 +19,14 @@ const knifesValues = {
     "Rgb eternal": {
         "OG_Value": "3",
         "Tag_Serial_Value": "5-6"
+    },
+    "Splash": {
+        "OG_Value": "9",
+        "Tag_Serial_Value": "N/A"
+    },
+    "Paranormal": {
+        "OG_Value": "9-10",
+        "Tag_Serial_Value": "N/A"
     }
 };
 
