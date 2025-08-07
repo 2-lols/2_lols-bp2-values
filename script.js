@@ -3,7 +3,8 @@ const values = {
     "PlayerCount": 15,
     "GameMode": "Capture the Flag",
     "ServerStatus": "Online",
-    "MapName": "Desert Oasis"
+    "MapName": "Breaking point 2"
+       
 };
 
 // This function creates an HTML element for each key-value pair
