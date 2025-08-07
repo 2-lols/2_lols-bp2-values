@@ -16,11 +16,11 @@ h1 {
     font-size: 3em;
     font-weight: bold;
     text-align: center;
-    background-image: linear-gradient(to right, #e052cf, #f963a7, #f6b539, #a7d08c);
+    background-image: linear-gradient(to right, #FF69B4, #FFB6C1, #FFC0CB);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 5px #f6b539, 0 0 10px #e052cf;
+    text-shadow: 0 0 5px #FF69B4, 0 0 10px #FFB6C1;
 }
     
 .updated-date {
@@ -36,7 +36,7 @@ h1 {
     padding: 20px;
     width: 90%;
     max-width: 600px;
-    color: #000; /* This is the fix: it makes the text black */
+    color: #000;
 }
 
 .value-item {
