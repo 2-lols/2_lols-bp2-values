@@ -11,6 +11,14 @@ const knifesValues = {
     "Azure": {
         "OG_Value": "0.5",
         "Tag_Serial_Value": "N/A"
+    },
+    "Sakura": {
+        "OG_Value": "2",
+        "Tag_Serial_Value": "N/A"
+    },
+    "Rgb eternal": {
+        "OG_Value": "3",
+        "Tag_Serial_Value": "5-6"
     }
 };
 
