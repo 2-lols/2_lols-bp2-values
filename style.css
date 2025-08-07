@@ -1,22 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #800080;
-    color: #333;
+    background-color: #000; /* Black background */
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10%),
+                      radial-gradient(circle, rgba(255, 255, 255, 0.1) 15%, transparent 15%);
+    background-size: 30px 30px, 50px 50px;
+    background-position: 0 0, 25px 25px;
+    color: #fff; /* Ensure text is visible on the black background */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
 }
 
-h1 {
-    color: #444;
-    text-align: center;
-}
-    
-.updated-date {
-    color: #999;
-    font-size: 0.8em;
-    margin-bottom: 20px;
+h1, .updated-date {
+    color: #fff; /* Ensure heading and date are white */
 }
     
 #values-container {
